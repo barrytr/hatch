@@ -1,0 +1,30 @@
+[package]
+name = "hatch-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Command-line interface for the HATCH orchestration framework."
+
+[[bin]]
+name = "hatch"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+colored = "2"
+futures-util = { version = "0.3", default-features = false }
+hatch-bus = { path = "../hatch-bus" }
+hatch-console = { path = "../hatch-console" }
+hatch-core = { path = "../hatch-core" }
+hatch-llm = { path = "../hatch-llm" }
+hatch-planner = { path = "../hatch-planner" }
+hatch-spawner = { path = "../hatch-spawner" }
+hatch-supervisor = { path = "../hatch-supervisor" }
+regex = "1"
+rustyline = "14"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "signal"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

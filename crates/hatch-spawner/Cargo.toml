@@ -1,0 +1,17 @@
+[package]
+name = "hatch-spawner"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Spawns agent tasks from execution plans and templates."
+
+[dependencies]
+hatch-agent = { path = "../hatch-agent" }
+hatch-bus = { path = "../hatch-bus" }
+hatch-core = { path = "../hatch-core" }
+hatch-llm = { path = "../hatch-llm" }
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync"] }
+toml = "0.8"
+tracing = "0.1"
+uuid = { version = "1", features = ["v4"] }

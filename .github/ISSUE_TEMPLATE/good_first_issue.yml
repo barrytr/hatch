@@ -1,0 +1,37 @@
+name: Good first issue
+description: Propose a beginner-friendly task
+title: "good-first-issue: "
+labels: ["good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to suggest or scope a good first issue for new contributors.
+
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      description: What should be implemented/fixed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and boundaries
+      description: Keep this task small and reviewable
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Suggested files
+      description: Which files/crates are likely involved?
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How do we know this issue is done?
+    validations:
+      required: true

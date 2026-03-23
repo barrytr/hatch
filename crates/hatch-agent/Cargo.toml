@@ -1,0 +1,17 @@
+[package]
+name = "hatch-agent"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Agent trait, context, and generic agent implementation for HATCH."
+
+[dependencies]
+async-trait = "0.1"
+hatch-bus = { path = "../hatch-bus" }
+hatch-core = { path = "../hatch-core" }
+hatch-llm = { path = "../hatch-llm" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["sync"] }
+tracing = "0.1"
+uuid = { version = "1", features = ["v4"] }

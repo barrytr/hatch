@@ -1,0 +1,20 @@
+# Rust
+/target
+**/*.rs.bk
+
+# Environment
+.env
+.env.*
+
+# MacOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Hatch runtime outputs
+/hatch_runs/
+
+# Node artifacts in generated projects
+**/node_modules/

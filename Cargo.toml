@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/hatch-core",
+    "crates/hatch-llm",
+    "crates/hatch-bus",
+    "crates/hatch-agent",
+    "crates/hatch-planner",
+    "crates/hatch-spawner",
+    "crates/hatch-supervisor",
+    "crates/hatch-console",
+    "crates/hatch-cli",
+    "examples/build_todo_app",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"

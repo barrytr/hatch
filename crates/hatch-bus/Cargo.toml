@@ -1,0 +1,12 @@
+[package]
+name = "hatch-bus"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Async broadcast message bus for HATCH agent coordination."
+
+[dependencies]
+hatch-core = { path = "../hatch-core" }
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["macros", "rt", "sync"] }
+tracing = "0.1"

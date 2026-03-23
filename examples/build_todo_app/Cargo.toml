@@ -1,0 +1,20 @@
+[package]
+name = "build_todo_app"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+anyhow = "1"
+hatch-bus = { path = "../../crates/hatch-bus" }
+hatch-console = { path = "../../crates/hatch-console" }
+hatch-core = { path = "../../crates/hatch-core" }
+hatch-llm = { path = "../../crates/hatch-llm" }
+hatch-planner = { path = "../../crates/hatch-planner" }
+hatch-spawner = { path = "../../crates/hatch-spawner" }
+hatch-supervisor = { path = "../../crates/hatch-supervisor" }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

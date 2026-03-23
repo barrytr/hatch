@@ -1,0 +1,12 @@
+[package]
+name = "hatch-supervisor"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Supervises runs by consuming bus events and merging agent output."
+
+[dependencies]
+hatch-bus = { path = "../hatch-bus" }
+hatch-core = { path = "../hatch-core" }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "time", "process"] }
+tracing = "0.1"

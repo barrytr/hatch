@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest a new capability or UX improvement
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What user problem are you trying to solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe your ideal behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Planner
+        - Spawner
+        - Supervisor
+        - CLI / UX
+        - LLM provider
+        - Build/fix loop
+        - Docs
+        - Other
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Why this matters for users/adoption

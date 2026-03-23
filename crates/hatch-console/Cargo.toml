@@ -1,0 +1,13 @@
+[package]
+name = "hatch-console"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Claude Code–style terminal session output for HATCH runs."
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+colored = "2"
+hatch-bus = { path = "../hatch-bus" }
+hatch-core = { path = "../hatch-core" }
+tokio = { version = "1", features = ["macros", "rt", "sync"] }

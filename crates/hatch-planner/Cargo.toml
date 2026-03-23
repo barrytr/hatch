@@ -1,0 +1,15 @@
+[package]
+name = "hatch-planner"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Meta-agent planner that turns intents into execution plans via an LLM."
+
+[dependencies]
+async-trait = "0.1"
+hatch-core = { path = "../hatch-core" }
+hatch-llm = { path = "../hatch-llm" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+uuid = { version = "1", features = ["v4"] }
