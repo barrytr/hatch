@@ -12,12 +12,6 @@ HATCH plans, generates, builds, auto-fixes from logs, and serves locally.
 
 ## 10-Second Demo
 
-> Add your GIF/video here to maximize conversion from visitors to users.
->
-> - `docs/demo.gif`
-> - [Asciinema](https://asciinema.org/)
-> - [YouTube short](https://www.youtube.com/)
-
 ```text
 $ make run INTENT="Build a fullstack todo app"
 → plans frontend + backend tasks
