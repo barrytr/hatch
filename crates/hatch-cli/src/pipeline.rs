@@ -14,7 +14,7 @@ use hatch_console::{
     emit_plan_ready, print_planning_done, print_planning_start, print_session_header,
     spawn_live_reporter,
 };
-use hatch_llm::{CompletionRequest, LlmProvider, Message, MessageRole, SharedLlm};
+use hatch_llm::{CompletionRequest, Message, MessageRole, SharedLlm};
 use hatch_planner::Planner;
 use hatch_spawner::Spawner;
 use hatch_supervisor::Supervisor;

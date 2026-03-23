@@ -5,7 +5,7 @@ mod pipeline;
 
 use std::path::PathBuf;
 use std::sync::Arc;
-use std::io::{self, IsTerminal};
+use std::io::{self, IsTerminal, Write};
 
 use anyhow::Context;
 use clap::{Parser, Subcommand};

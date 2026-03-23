@@ -18,3 +18,6 @@
 
 # Node artifacts in generated projects
 **/node_modules/
+
+/docs*
+

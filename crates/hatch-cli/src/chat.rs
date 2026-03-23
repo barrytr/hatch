@@ -6,7 +6,7 @@ use std::sync::Arc;
 use anyhow::Context;
 use colored::Colorize;
 use futures_util::StreamExt;
-use hatch_llm::{CompletionRequest, LlmProvider, Message, MessageRole, SharedLlm};
+use hatch_llm::{CompletionRequest, Message, MessageRole, SharedLlm};
 use rustyline::error::ReadlineError;
 use rustyline::DefaultEditor;
 use serde::Deserialize;

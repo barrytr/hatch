@@ -499,6 +499,7 @@ dependencies = [
  "hatch-core",
  "hatch-llm",
  "serde",
+ "serde_json",
  "tokio",
  "tracing",
  "uuid",
@@ -529,6 +530,7 @@ dependencies = [
  "hatch-planner",
  "hatch-spawner",
  "hatch-supervisor",
+ "regex",
  "rustyline",
  "serde",
  "serde_json",
@@ -1181,6 +1183,18 @@ checksum = "c069c179fcdc6a2fe24d8d18305cf085fdbd4f922c041943e203685d6a1c58fd"
 dependencies = [
  "endian-type",
  "nibble_vec",
+]
+
+[[package]]
+name = "regex"
+version = "1.12.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e10754a14b9137dd7b1e3e5b0493cc9171fdd105e0ab477f51b72e7f3ac0e276"
+dependencies = [
+ "aho-corasick",
+ "memchr",
+ "regex-automata",
+ "regex-syntax",
 ]
 
 [[package]]
